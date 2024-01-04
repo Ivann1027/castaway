@@ -1,0 +1,41 @@
+.podcastAdd {
+	display: flex;
+
+	&__img {
+		flex: 1 1 50%;
+		border-radius: 15px;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-size: 100%;
+	}
+
+	&__content {
+		flex: 1 1 50%;
+		height: 874px;
+		padding-top: 25%;
+		padding-left: 60px;
+	}
+
+	&__title {
+		font-size: 70px;
+		line-height: 88px;
+		letter-spacing: 3.2px;
+		font-weight: 400;
+		margin-bottom: 90px;
+
+		span {
+			position: relative;
+			img {
+				position: absolute;
+				left: 0;
+				bottom: 10;
+			}
+		}
+	}
+
+	&__links {
+		p {
+			margin-bottom: 16px;
+		}
+	}
+}
