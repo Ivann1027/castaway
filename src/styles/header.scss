@@ -1,0 +1,33 @@
+.header {
+
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 43px 0;
+	}
+
+	&__title {
+		cursor: pointer;
+		font-weight: 600;
+		font-size: 44px;
+	}
+
+	&__navbar ul {
+		display: flex;
+		align-items: center;
+
+		li {
+			margin-right: 40px;
+			cursor: pointer;
+
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover {
+				color: rgba(17, 141, 168, 1);
+			}
+		}
+	}
+}
