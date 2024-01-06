@@ -1,6 +1,7 @@
 import '../../styles/main.scss'
 import PodcastAdd from './PodcastAdd'
 import Episodes from './Episodes'
+import Slidebar from './Slidebar'
 
 const Main = () => {
 
@@ -9,6 +10,7 @@ const Main = () => {
 		<section className="main wrapper">
 			<PodcastAdd />
 			<Episodes />
+			<Slidebar />
 		</section>
 	)
 }

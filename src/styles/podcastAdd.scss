@@ -3,11 +3,20 @@
 
 	&__img {
 		flex: 1 1 50%;
-		border-radius: 15px;
-		background-repeat: no-repeat;
-		background-position: 0 0;
-		background-size: 100%;
+		position: relative;
 	}
+
+	.decorate-img {
+		position: absolute;
+		top: -26px;
+		left: -26px;
+		z-index: 20;
+	}
+	.main-img {
+		max-width: 100%;
+		border-radius: 15px;
+	}
+
 
 	&__content {
 		flex: 1 1 50%;
@@ -27,8 +36,8 @@
 			position: relative;
 			img {
 				position: absolute;
-				left: 0;
-				bottom: 10;
+				left: -2px;
+				bottom: -10px;
 			}
 		}
 	}

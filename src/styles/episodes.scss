@@ -15,6 +15,26 @@
 		letter-spacing: 2.88px;
 	}
 
+	&__tabs {
+		display: flex;
+		align-items: center;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	&__tab {
+		display: inline-block;
+		padding: 10px 20px;
+		cursor: pointer;
+		user-select: none;
+		margin-right: 1.2px;
+		background-color: blue;
+		text-transform: capitalize;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
 	&__list {
 		display: flex;
 		flex-direction: column-reverse;
@@ -26,15 +46,17 @@
 	border-radius: 32px;
 	padding: 40px;
 	display: flex;
-	align-items: center;
 	margin-bottom: 60px;
 
 	&__img {
-		flex: 1 1 30%;
+		flex: 1 1 40%;
+		img {
+			object-fit: fill;
+		}
 	}
 
 	&__content {
-		padding-left: 53px;
+		padding: 0 0 0 50px;
 	}
 
 	&__category {
@@ -44,30 +66,37 @@
 		padding: 7.5px 16px;
 		border-radius: 5px;
 		font-size: 18px;
+		margin-bottom: 50px;
 	}
 
 	&__number {
 		color: rgba(17, 141, 168, 1);
 		font-size: 17px;
+		margin-bottom: 18px;
 	}
 
 	&__title {
 		font-size: 57px;
 		letter-spacing: 2.56px;
 		font-weight: 400;
+		margin-bottom: 28px;
 	}
 
 	&__description {
 		color: rgba(255, 255, 255, 0.7);
 		font-size: 22px;
 		line-height: 33px;
+		margin-bottom: 18px;
 	}
 
 	&__btn {
 		background-color: rgba(17, 141, 168, 1);
 		border-radius: 6px;
-		padding: 12px 20px;
+		padding: 10px 20px;
 		color: #fff;
 		font-size: 18px;
+		&:hover {
+			background-color: #118ad8;
+		}
 	}
 }
